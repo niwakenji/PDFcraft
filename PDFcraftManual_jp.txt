@@ -123,3 +123,14 @@ at now + 2min do merge(["a.pdf", "b.pdf"], "out.pdf")
 　Tkinterのファイルドロップ機能を有効にするために使用しました。  
 ・upx-5.0.0-win64.zip  
 　PyInstallerで作成した実行ファイル（.exe）を圧縮するために使用しました。
+
+■ 開発・実行環境（使用ツール一覧）
+
+・python-3.11.8-amd64.exe  
+　本ツールは Python 3.11.8（64bit）をベースに作成しています。  
+・thonny-4.1.7.exe  
+　初心者向けのPython IDE「Thonny」で開発・デバッグを行いました。  
+・tkdnd-2.9.5-windows-tcl8.6-x64.zip  
+　Tkinterのファイルドロップ機能を有効にするために使用しました。  
+・upx-5.0.0-win64.zip  
+　PyInstallerで作成した実行ファイル（.exe）を圧縮するために使用しました。
