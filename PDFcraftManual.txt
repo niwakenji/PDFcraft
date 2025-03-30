@@ -1,0 +1,119 @@
+ÅyPDF Processing Tool - User ManualÅz
+
+This tool, ÅgPDFcraft,Åh allows you to perform tasks such as splitting, merging, and converting PDF files to Word format.
+To use it, drop files into CommandMaker (the launch window), choose the desired operation, and run it.
+If you want to repeat the same operation, it's convenient to edit the generated commands.txt and drop it into CommandMaker.
+You can also use variables for parts of the command.
+
++------------CommandMaker-------------+
+|                                     |
+| GUI + File Type Detection & Command | Earth Side
+| Generator                           |
++-------------------------------------+
+                 Ñ†
+                 Ñ†  Communication via commands.txt (with variables)
+                 Å´
++-------------PDFcraft----------------+
+|                                     |
+|              Parser                 |
+|        Parses commands.txt          |
+|          Å´          Å´             |
+|       Operator    Scheduler         |
+|   Immediate Run   Scheduled Run     | Mars Side
+|      Å^       Å_Å^                  |
+|     Å´         Å´                   |
+|   Logger    Automaton               |
+| Logs       Core Processing Unit     |
+|          (e.g., merge, split)       |
+|                                     |
++-------------------------------------+
+
+Å° Supported Operations and Commands
+
+merge
+Merges multiple PDF files.
+merge(["input1.pdf", "input2.pdf"], "output.pdf")
+
+split
+Splits a PDF into two parts at a specified page.
+split("input.pdf", 3, "part1.pdf", "part2.pdf")
+
+replace
+Replaces a range of pages with another PDF.
+replace("base.pdf", 2, 4, "new.pdf", "output.pdf")
+
+remove
+Removes a specified range of pages.
+remove("input.pdf", 2, 3, "output.pdf")
+
+extract
+Extracts a specified range of pages.
+extract("input.pdf", 2, 5, "output.pdf")
+
+convert
+Converts a PDF to Word format.
+convert("input.pdf", "output.docx")
+
+watermark
+Overlays watermark text repeatedly on a PDF.
+watermark(["input.pdf"], "Confidential", ["output.pdf"])
+
+sukashi
+Copies elements from the first page of a PowerPoint file to all pages up to a specified page, and saves it as a PDF.
+sukashi("input.pptx", 5, ["Watermark"], ["TotalPages"], "output.pdf")
+
+Note:
+Before using this feature, place text boxes named ÅgWatermarkÅh and ÅgTotalPagesÅh on the first page of the PowerPoint file.
+
+ÅgWatermarkÅh will be copied to all pages (e.g., background text like ÅgConfidentialÅh).
+
+ÅgTotalPagesÅh will be automatically overwritten with Åg/ Total Page CountÅh format (e.g., Åg/ 5Åh).
+
+add
+Adds image files (JPEG, etc.) to a PDF and saves it. The original PDF will be renamed with the date.
+add("input.pdf", ["img1.jpg", "img2.jpg"], "backup_input_240329.pdf")
+
+Note:
+This runs when only image files are present in the executableÅfs folder, and one PDF file is dropped into the window.
+
+pdf
+Converts multiple images into a single PDF.
+pdf(["img1.jpg", "img2.jpg"], "output.pdf")
+
+insert
+Inserts another PDF before a specific page of a base PDF.
+insert("base.pdf", 3, "insert.pdf", "output.pdf")
+
+password
+Adds a password to PDF files. Multiple files can be processed at once.
+password(["input1.pdf", "input2.pdf"], "mypassword", ["output1.pdf", "output2.pdf"])
+
+Å° Variable Definition and User Input Mechanism
+
+By defining variables in the generated commands.txt,
+you can perform reusable and generalized tasks repeatedly.
+Use Åg?Åh to prompt the user with an input box or file selection dialog.
+
+If the variable's description includes words like Ågpath,Åh Ågaddress,Åh or Ågfile,Åh
+a file selection dialog will appear; otherwise, a text input box will open.
+
+You can also write multiple commands.
+
+Å° Example of commands.txt
+# Variable Definitions
+Base PDF File: x1 = ?
+Insert PDF File: x2 = ?
+Insert Page Number: insertpage = 3
+
+# Operation
+insert(x1, insertpage, x2)
+
+Å° How to Execute Files
+
+Write the desired commands in commands.txt as shown above.
+Drop the target file (or folder) into the toolÅfs window.
+The tool will automatically read commands.txt and execute the corresponding operations.
+
+Å° Scheduled Execution (Advanced Feature)
+at now + 2min do merge(["a.pdf", "b.pdf"], "out.pdf")
+Å® Executes the command 2 minutes later.
