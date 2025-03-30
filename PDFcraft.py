@@ -1653,7 +1653,7 @@ def read_commands_with_substitution(filepaths):
     """    
 
     all_lines = []
-    root = Tk()
+    root = tk.Tk()
     root.withdraw()
 
     for filepath in filepaths:
