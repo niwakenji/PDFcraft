@@ -1,114 +1,125 @@
-�yPDF�����c�[�� �g�����}�j���A���z
+【PDF処理ツール 使い方マニュアル】
 
-���̃c�[���uPDFcraft�v�́APDF�t�@�C���̕����A�����AWord�ϊ��Ȃǂ��s���܂��B
-CommandMaker(�N���E�B���h)�Ƀt�@�C�����h���b�v��������I�����Ď��s���܂��B
-�����������J�Ԃ��s���ꍇ�́A���������commands.txt��ҏW���A
-CommandMaker�Ƀh���b�v������@���֗��ł��B�ꕔ����ϐ��ɂ��邱�Ƃ��ł��܂��B
+このツール「PDFcraft」は、PDFファイルの分割、結合、Word変換などが行えます。
+CommandMaker(起動ウィンド)にファイルをドロップし処理を選択して実行します。
+同じ処理を繰返し行う場合は、生成されるcommands.txtを編集し、
+CommandMakerにドロップする方法が便利です。一部分を変数にすることもできます。
 
 
 +------------CommandMaker-------------+
 |                                     |
-| GUI�{�t�@�C����ʔ���E�R�}���h���� |  �n����
+| GUI＋ファイル種別判定・コマンド生成 |  地球側
 |                                     |
 +-------------------------------------+
-                 ��
-                 �� commands.txt(�ϐ��j�ʐM
-                 ��
+                 │
+                 │ commands.txt(変数可）通信
+                 ↓
 +-------------PDFcraft----------------+
 |                                     |
 |              Parser                 |
-|        Commands.txt�̉��           |
-|          ��          ��             |
+|        Commands.txtの解析           |
+|          ↓          ↓             |
 |       Operator    Scheduler         |
-|       �������s  �X�P�W���[�����s    |  �ΐ���
-|      �^       �_�^                  |
-|     ��         ��                   |
+|       即時実行  スケジュール実行    |  火星側
+|      ／       ＼／                  |
+|     ↓         ↓                   |
 |   Logger    Automaton               |
-| ���O�L�^    �����{��                |
-|          (merge,split��)            |
+| ログ記録    処理本体                |
+|          (merge,split等)            |
 |                                     |
 +-------------------------------------+
 
 
-�� �Ή����鏈���ꗗ�ƃR�}���h
+■ 対応する処理一覧とコマンド
 merge
-�@������PDF�t�@�C�����������܂��B
-�@merge(["input1.pdf", "input2.pdf"], "output.pdf")
+　複数のPDFファイルを結合します。
+　merge(["input1.pdf", "input2.pdf"], "output.pdf")
 
 split
-�@PDF���w��y�[�W��2�ɕ������܂��B
-�@split("input.pdf", 3, "part1.pdf", "part2.pdf")
+　PDFを指定ページで2つに分割します。
+　split("input.pdf", 3, "part1.pdf", "part2.pdf")
 
 replace
-�@�w��y�[�W�͈͂��PDF�Œu�����܂��B
-�@replace("base.pdf", 2, 4, "new.pdf", "output.pdf")
+　指定ページ範囲を別PDFで置換します。
+　replace("base.pdf", 2, 4, "new.pdf", "output.pdf")
 
 remove
-�@�w��y�[�W�͈͂��폜���܂��B
-�@remove("input.pdf", 2, 3, "output.pdf")
+　指定ページ範囲を削除します。
+　remove("input.pdf", 2, 3, "output.pdf")
 
 extract
-�@�w��y�[�W�͈͂𒊏o���܂��B
-�@extract("input.pdf", 2, 5, "output.pdf")
+　指定ページ範囲を抽出します。
+　extract("input.pdf", 2, 5, "output.pdf")
 
 convert
-�@PDF��Word�`���ɕϊ����܂��B
-�@convert("input.pdf", "output.docx")
+　PDFをWord形式に変換します。
+　convert("input.pdf", "output.docx")
 
 watermark
-�@PDF�ɓ������������J��Ԃ��d�˂ĕ\�����܂��B
-�@watermark(["input.pdf"], "Confidential", ["output.pdf"])
+　PDFに透かし文字を繰り返し重ねて表示します。
+　watermark(["input.pdf"], "Confidential", ["output.pdf"])
 
 sukashi
-�@PowerPoint��1�y�[�W�ڂɂ���v�f���A�w��y�[�W�܂ł̑S�y�[�W�ɃR�s�[���APDF�Ƃ��ĕۑ����܂��B
-�@sukashi("input.pptx", 5, ["������"], ["���y�[�W"], "output.pdf")
+　PowerPointの1ページ目にある要素を、指定ページまでの全ページにコピーし、PDFとして保存します。
+　sukashi("input.pptx", 5, ["透かし"], ["総ページ"], "output.pdf")
 
-�@�����̋@�\���g���O�ɁAPowerPoint��1�y�[�W�ڂɁu�������v�u���y�[�W�v�Ɩ��O��t�����e�L�X�g�{�b�N�X��z�u���Ă��������B
-�@�E�u�������v�c�R�s�[���đS�y�[�W�ɓ\��t�����܂��i��F�w�i�Ɂu�ЊO��v�Ȃǁj
-�@�E�u���y�[�W�v�c�����I�Ɂu/ �S�y�[�W���v�̌`���ɏ㏑������܂��i��F�u/ 5�v�j
+　※この機能を使う前に、PowerPointの1ページ目に「透かし」「総ページ」と名前を付けたテキストボックスを配置してください。
+　・「透かし」…コピーして全ページに貼り付けられます（例：背景に「社外秘」など）
+　・「総ページ」…自動的に「/ 全ページ数」の形式に上書きされます（例：「/ 5」）
 
 add
-�@PDF�ɉ摜�iJPEG�Ȃǁj��ǉ����ĕۑ����܂��B����PDF�͓��t�t���Ń��l�[������܂��B
-�@add("input.pdf", ["img1.jpg", "img2.jpg"], "backup_input_240329.pdf")
+　PDFに画像（JPEGなど）を追加して保存します。元のPDFは日付付きでリネームされます。
+　add("input.pdf", ["img1.jpg", "img2.jpg"], "backup_input_240329.pdf")
 
-�@�����̋@�\�́A���s�t�@�C���̂���t�H���_�ɉ摜�̂ݑ��݂���Ƃ��ɁAPDF�t�@�C���P���h���b�v����Ǝ��s����܂�
+　※この機能は、実行ファイルのあるフォルダに画像のみ存在するときに、PDFファイル１つをドロップすると実行されます
 
 pdf
-�@�����摜��1��PDF�ɕϊ����܂��B
-�@pdf(["img1.jpg", "img2.jpg"], "output.pdf")
+　複数画像を1つのPDFに変換します。
+　pdf(["img1.jpg", "img2.jpg"], "output.pdf")
 
 insert
-�@PDF�̔C�ӂ̃y�[�W�̑O�ɁA�ʂ�PDF��}�����܂��B
-�@insert("base.pdf", 3, "insert.pdf", "output.pdf")
+　PDFの任意のページの前に、別のPDFを挿入します。
+　insert("base.pdf", 3, "insert.pdf", "output.pdf")
 
 password
-�@PDF�Ƀp�X���[�h��t�^���ĕۑ����܂��B���������������\�ł��B
-�@password(["input1.pdf", "input2.pdf"], "mypassword", ["output1.pdf", "output2.pdf"])
+　PDFにパスワードを付与して保存します。複数同時処理も可能です。
+　password(["input1.pdf", "input2.pdf"], "mypassword", ["output1.pdf", "output2.pdf"])
 
 
-�� �ϐ���`�ƃ��[�U�[���͂̎d�g��
-���������commands.txt�ɁA�ϐ����`���邱�ƂŁA
-�ėp���̂����Ƃ��A�J�Ԃ����{�ł��܂��B
-�u?�v���g�����ƂŁA���̓{�b�N�X��t�@�C���I����ʂœ��͂ł��܂��B
-�ϐ��̐������Ɂu�p�X�v�upath�v�u�A�h���X�v�u�t�@�C���v�u�݂肩�v��
-�܂܂ꂽ�ꍇ�̓t�@�C���I����ʁA�Ȃ���Γ��̓{�b�N�X���J���܂��B
-�܂��A�����̃R�}���h���L�q�ł��܂��B
+■ 変数定義とユーザー入力の仕組み
+生成されるcommands.txtに、変数を定義することで、
+汎用性のある作業を、繰返し実施できます。
+「?」を使うことで、入力ボックスやファイル選択画面で入力できます。
+変数の説明文に「パス」「path」「アドレス」「ファイル」「在りか」が
+含まれた場合はファイル選択画面、なければ入力ボックスが開きます。
+また、複数のコマンドを記述できます。
 
-�� commands.txt �̗�
+■ commands.txt の例
 
-# �ϐ���`
-��PDF�t�@�C��: x1 = ?
-�}��PDF�t�@�C��: x2 = ?
-�}���y�[�W�ԍ�: insertpage = 3
+# 変数定義
+元PDFファイル: x1 = ?
+挿入PDFファイル: x2 = ?
+挿入ページ番号: insertpage = 3
 
-# ����
+# 処理
 insert(x1, insertpage, x2)
 
-�� �t�@�C���̎��s���@
-commands.txt �ɏ�L�̂悤�ȃR�}���h���L�q���܂��B
-�c�[���̃E�B���h�E�ɁA�Ώۃt�@�C���i�܂��̓t�H���_�j���h���b�v���܂��B
-�����I�� commands.txt ��ǂݎ��A�Y�����������s���܂��B
+■ ファイルの実行方法
+commands.txt に上記のようなコマンドを記述します。
+ツールのウィンドウに、対象ファイル（またはフォルダ）をドロップします。
+自動的に commands.txt を読み取り、該当処理を実行します。
 
-�� �X�P�W���[�����s�i���x�ȋ@�\�j
+■ スケジュール実行（高度な機能）
 at now + 2min do merge(["a.pdf", "b.pdf"], "out.pdf")
-�� 2����ɏ��������s���܂��B
+→ 2分後に処理を実行します。
+
+■ 開発・実行環境（使用ツール一覧）
+
+・python-3.11.8-amd64.exe  
+　本ツールは Python 3.11.8（64bit）をベースに作成しています。  
+・thonny-4.1.7.exe  
+　初心者向けのPython IDE「Thonny」で開発・デバッグを行いました。  
+・tkdnd-2.9.5-windows-tcl8.6-x64.zip  
+　Tkinterのファイルドロップ機能を有効にするために使用しました。  
+・upx-5.0.0-win64.zip  
+　PyInstallerで作成した実行ファイル（.exe）を圧縮するために使用しました。
