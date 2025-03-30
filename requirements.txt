@@ -1,0 +1,23 @@
+# 必要なPythonパッケージ一覧（使用目的つき）
+# Required Python packages with usage descriptions
+
+pillow==11.1.0           # 画像（JPG/PNGなど）を読み込んでPDFに変換するために使用
+                         # Used to read image files (JPG/PNG) and convert them into PDF
+
+PyPDF2==3.0.1            # PDFの読み書き・結合・分割・暗号化などの操作に使用
+                         # For reading/writing, merging, splitting, and encrypting PDF files
+
+pdf2docx==0.5.8          # PDFをWord（.docx）ファイルに変換するために使用
+                         # Converts PDF files into Word (.docx) format
+
+pyautogui==0.9.54        # Wordアプリ操作（タブ移動やボタン押下など自動化）に使用
+                         # Automates GUI operations like switching tabs or clicking buttons in Word
+
+pywin32==310             # PowerPointやWordなど、WindowsのOfficeアプリを操作するために使用（COM）
+                         # Accesses and controls Office apps (PowerPoint, Word) via Windows COM interface
+
+reportlab==4.1.0         # PDFに透かしを描画するための一時PDF作成に使用
+                         # Creates temporary PDFs with watermark text or graphics
+
+tkinterdnd2==0.3.0       # Tkinterでファイルのドラッグ＆ドロップ機能を実装するために使用
+                         # Adds drag-and-drop functionality to Tkinter GUI
