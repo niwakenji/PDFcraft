@@ -83,5 +83,5 @@ as long as you give appropriate credit.
 ## 👤 Author / 作者
 
 **Kenji Niwa**  
-[**koromokkuru lab.（コロモックル研究所）**]([https://example.com](http://netyama.sakura.ne.jp/db/db.cgi?folder=kuruma))
+[**koromokkuru lab.（コロモックル研究所）**][https://example.com](http://netyama.sakura.ne.jp/db/db.cgi?folder=kuruma)
 ---
