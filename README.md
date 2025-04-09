@@ -1,6 +1,9 @@
 # PDFcraft  
-**PDFcraft** is a Python-based tool for manipulating PDF files — merging, splitting, watermarking, image insertion, and more.  
-**PDFcraft（ピーディーエフクラフト）**は、PDFの結合・分割・透かし追加・画像挿入などを行うPython製ツールです。
+PDFcraft is a Python-based tool for manipulating PDF files — merging, splitting, watermarking, image insertion, and more.  
+To prevent accidental file deletion, PDFcraft is designed to always generate new output files.  
+
+PDFcraftは、PDFの結合・分割・透かし追加・画像挿入などを行うPython製ツールです。  
+誤ってファイルを消すことを防ぐため、出力ファイルは常に新しく生成される仕様になっています。
 
 ---
 
@@ -47,13 +50,17 @@ Place PDFcraft.exe and language.json in the same folder and double-click to run.
 
 ## 🌐 Language Support / 言語対応
 
-- English 🇬🇧  
-- Japanese 🇯🇵  
+- English
+- Japanese
+- German
+- French
+- Spanish
 
-The interface language is selected automatically based on `language.json`.  
-If the file is missing or broken, Japanese will be used as fallback.  
-表示言語は `language.json` によって自動的に選ばれます。  
-ファイルが存在しない場合や読み込めない場合、日本語で表示されます。
+The interface language is selected based on the `"language"` key in `language.json` (choose from `en`, `de`, `fr`, `es`, `ja`).  
+If the file is missing or invalid, Japanese will be used as fallback.
+
+表示言語は `language.json` の `"language"` キーによって選ばれます（`en`、`de`、`fr`、`es`、`ja` から選択）。  
+ファイルが存在しない場合や読み込めない場合は、日本語が既定で使用されます。
 
 ---
 
