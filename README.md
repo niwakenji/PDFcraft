@@ -44,12 +44,8 @@ Place `PDFcraft.py` and `language.json` in the same folder and run:
 python PDFcraft.py
 ```
 
-Or, if you're using the executable version:  
-または、実行ファイル版を使う場合は
-
-PDFcraft.exe と language.json を同じフォルダに置いてダブルクリックで実行してください。  
-Place PDFcraft.exe and language.json in the same folder and double-click to run.
-
+Or, if you're using the executable version, Place PDFcraft.exe and language.json in the same folder and double-click to run.
+または、実行ファイル版を使う場合は、PDFcraft.exe と language.json を同じフォルダに置いてダブルクリックで実行してください。  
 
 
 ---
