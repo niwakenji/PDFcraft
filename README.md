@@ -74,18 +74,6 @@ For running from source:
 See [`requirements.txt`](./requirements.txt) for installation.  
 インストールには [`requirements.txt`](./requirements.txt) をご利用ください。
 
----
-
-## 📜 License / ライセンス
-
-This project is licensed under the  
-[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).  
-本プロジェクトは  
-[クリエイティブ・コモンズ 表示 4.0 国際ライセンス（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/) に基づき提供されています。
-
-You may use, modify, and redistribute this tool, including for commercial purposes,  
-as long as you give appropriate credit.  
-商用利用・改変・再配布は自由ですが、著作者クレジットを明記してください。
 
 ---
 
