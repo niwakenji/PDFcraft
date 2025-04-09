@@ -5,7 +5,7 @@ To prevent accidental file deletion, PDFcraft is designed to always generate new
 PDFcraftは、PDFの結合・分割・透かし追加・画像挿入などを行うPython製ツールです。  
 誤ってファイルを消さないよう、出力ファイルは新しく生成される仕様です。
 
-![PDFcraft GUI](images/gui_screenshot.png)
+![PDFcraft GUI](overview.jpg)
 
 ---
 
