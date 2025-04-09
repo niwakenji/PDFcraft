@@ -1,9 +1,11 @@
-# PDFcraft  
+# [PDFcraft v1.03](https://github.com/niwakenji/PDFcraft/releases/tag/v1.0.3)
 PDFcraft is a Python-based tool for manipulating PDF files — merging, splitting, watermarking, image insertion, and more.  
 To prevent accidental file deletion, PDFcraft is designed to always generate new output files.  
 
 PDFcraftは、PDFの結合・分割・透かし追加・画像挿入などを行うPython製ツールです。  
-誤ってファイルを消すことを防ぐため、出力ファイルは常に新しく生成される仕様になっています。
+誤ってファイルを消さないよう、出力ファイルは新しく生成される仕様です。
+
+![PDFcraft GUI](images/gui_screenshot.png)
 
 ---
 
