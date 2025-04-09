@@ -1,23 +1,20 @@
-# •K—v‚ÈPythonƒpƒbƒP[ƒWˆê——ig—p–Ú“I‚Â‚«j
+# å¿…è¦ãªPythonãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ä¸€è¦§ï¼ˆä½¿ç”¨ç›®çš„ã¤ãï¼‰
 # Required Python packages with usage descriptions
 
-pillow==11.1.0           # ‰æ‘œiJPG/PNG‚È‚Çj‚ğ“Ç‚İ‚ñ‚ÅPDF‚É•ÏŠ·‚·‚é‚½‚ß‚Ég—p
+pillow==11.1.0           # ç”»åƒï¼ˆJPG/PNGãªã©ï¼‰ã‚’èª­ã¿è¾¼ã‚“ã§PDFã«å¤‰æ›ã™ã‚‹ãŸã‚ã«ä½¿ç”¨
                          # Used to read image files (JPG/PNG) and convert them into PDF
 
-PyPDF2==3.0.1            # PDF‚Ì“Ç‚İ‘‚«EŒ‹‡E•ªŠ„EˆÃ†‰»‚È‚Ç‚Ì‘€ì‚Ég—p
+PyPDF2==3.0.1            # PDFã®èª­ã¿æ›¸ããƒ»çµåˆãƒ»åˆ†å‰²ãƒ»æš—å·åŒ–ãªã©ã®æ“ä½œã«ä½¿ç”¨
                          # For reading/writing, merging, splitting, and encrypting PDF files
 
-pdf2docx==0.5.8          # PDF‚ğWordi.docxjƒtƒ@ƒCƒ‹‚É•ÏŠ·‚·‚é‚½‚ß‚Ég—p
+pdf2docx==0.5.8          # PDFã‚’Wordï¼ˆ.docxï¼‰ãƒ•ã‚¡ã‚¤ãƒ«ã«å¤‰æ›ã™ã‚‹ãŸã‚ã«ä½¿ç”¨
                          # Converts PDF files into Word (.docx) format
 
-pyautogui==0.9.54        # WordƒAƒvƒŠ‘€ìiƒ^ƒuˆÚ“®‚âƒ{ƒ^ƒ“‰Ÿ‰º‚È‚Ç©“®‰»j‚Ég—p
-                         # Automates GUI operations like switching tabs or clicking buttons in Word
-
-pywin32==310             # PowerPoint‚âWord‚È‚ÇAWindows‚ÌOfficeƒAƒvƒŠ‚ğ‘€ì‚·‚é‚½‚ß‚Ég—piCOMj
+pywin32==310             # PowerPointã‚„Wordãªã©ã€Windowsã®Officeã‚¢ãƒ—ãƒªã‚’æ“ä½œã™ã‚‹ãŸã‚ã«ä½¿ç”¨ï¼ˆCOMï¼‰
                          # Accesses and controls Office apps (PowerPoint, Word) via Windows COM interface
 
-reportlab==4.1.0         # PDF‚É“§‚©‚µ‚ğ•`‰æ‚·‚é‚½‚ß‚ÌˆêPDFì¬‚Ég—p
+reportlab==4.1.0         # PDFã«é€ã‹ã—ã‚’æç”»ã™ã‚‹ãŸã‚ã®ä¸€æ™‚PDFä½œæˆã«ä½¿ç”¨
                          # Creates temporary PDFs with watermark text or graphics
 
-tkinterdnd2==0.3.0       # Tkinter‚Åƒtƒ@ƒCƒ‹‚Ìƒhƒ‰ƒbƒO•ƒhƒƒbƒv‹@”\‚ğÀ‘•‚·‚é‚½‚ß‚Ég—p
+tkinterdnd2==0.3.0       # Tkinterã§ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‰ãƒ©ãƒƒã‚°ï¼†ãƒ‰ãƒ­ãƒƒãƒ—æ©Ÿèƒ½ã‚’å®Ÿè£…ã™ã‚‹ãŸã‚ã«ä½¿ç”¨
                          # Adds drag-and-drop functionality to Tkinter GUI
