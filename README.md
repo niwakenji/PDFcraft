@@ -83,6 +83,6 @@ See [`requirements.txt`](./requirements.txt) for installation.
 
 ## 👤 Author / 作者
 
-**Kenji Niwa**  
-[**koromokkuru lab.（コロモックル研究所）**](http://netyama.sakura.ne.jp/db/db.cgi?folder=kuruma)
+Kenji Niwa
+[koromokkuru lab.（コロモックル研究所）](http://netyama.sakura.ne.jp/db/db.cgi?folder=kuruma)
 ---
