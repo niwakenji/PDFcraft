@@ -1,33 +1,191 @@
-PDFcraft by コロモックル研究所 (koromokkuru lab.) is licensed under a Creative Commons Attribution 4.0 International License.
-https://creativecommons.org/licenses/by/4.0/
+This license applies to the following original works:
 
-本作品「PDFcraft」は、コロモックル研究所（koromokkuru lab.）により作成され、
-クリエイティブ・コモンズ・ライセンス 表示 4.0 国際 (CC BY 4.0) のもとで提供されています。
-https://creativecommons.org/licenses/by/4.0/deed.ja
+    - PDFcraft.py (source code)
+    - PDFcraft.exe (compiled executable)
 
-You are free to:
-- Share — copy and redistribute the material in any medium or format
-- Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+Copyright (c) 2025 Kenji Niwa / koromokkuru lab.
 
-あなたは以下のことが自由にできます：
-- 共有 — あらゆる媒体や形式で本作品を複製・再配布できます
-- 改変 — 本作品をリミックス、変形、加工し、営利目的を含め自由に利用できます
+These works are licensed under the Apache License, Version 2.0 (the "License").
+You may not use these files except in compliance with the License.
+You may obtain a copy of the License at:
 
-Under the following terms:
-- Attribution — You must give appropriate credit, provide a link to the license,
-  and indicate if changes were made. You may do so in any reasonable manner,
-  but not in any way that suggests the licensor endorses you or your use.
+    http://www.apache.org/licenses/LICENSE-2.0
 
-以下の条件をお守りください：
-- 表示 — 適切なクレジット（例：作品名、著作者名、ライセンスへのリンク）を表示し、
-  変更を加えた場合にはその旨を明記してください。
-  これは常識的な方法で行う限り問題ありませんが、
-  元の著作者（コロモックル研究所）があなたやあなたの改変版を推奨しているような
-  印象を与えてはなりません。
+Unless required by applicable law or agreed to in writing, these works are
+distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the License for the specific language governing
+permissions and limitations under the License.
 
-No additional restrictions:
-- You may not apply legal terms or technological measures that legally restrict
-  others from doing anything the license permits.
 
-追加的な制限はありません：
-- 本ライセンスで認められた行為を、法律的または技術的手段で制限してはなりません。
+==== Start of Apache License 2.0 ====
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+"License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+"Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+"Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
+"Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+"Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+"Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+"Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+"Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."
+"Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+
+2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+
+You must give any other recipients of the Work or Derivative Works a copy of this License; and
+You must cause any modified files to carry prominent notices stating that You changed the files; and
+You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+
+9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
+
+END OF TERMS AND CONDITIONS
+
+
+
+-----------------------------------------------------------
+
+このライセンスは、以下の著作物に適用されます：
+
+- PDFcraft.py（ソースコード）
+- PDFcraft.exe（コンパイル済み実行ファイル）
+
+Copyright (c) 2025 Kenji Niwa / koromokkuru lab.
+
+これらの著作物は Apache License, Version 2.0（以下「ライセンス」）のもとにライセンスされています。
+このライセンスに従わない限り、これらのファイルを使用することはできません。
+ライセンスの全文は以下のURLから取得できます：
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+適用法により要求される場合、または書面による合意がある場合を除き、
+これらの著作物は "現状のまま（AS IS）" で提供されており、明示的または黙示的ないかなる保証もありません。
+ライセンスに定められた利用許諾と制限を確認してください。
+
+
+------------------------------------------------------------
+以下は Apache License 2.0 の全文です：
+この翻訳は非公式な参考訳であり、法的拘束力を持つのは英語原文です。
+------------------------------------------------------------
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+使用、複製、配布に関する条件
+
+1. 定義
+「ライセンス」とは、本書の第1条から第9条に定める使用、複製、および配布の条件を意味します。
+「ライセンサー」とは、本ライセンスを付与する著作権者またはその許可を受けた団体を意味します。
+「法的主体」とは、ある行為主体およびそれを支配する、またはそれに支配される、あるいは共通の支配下にあるすべての主体を含むものとします。ここでの「支配」とは、(i) 契約その他によってその主体の経営方針を直接的または間接的に決定する力、(ii) 発行済株式の50%以上の所有、または (iii) 実質的所有権を意味します。
+「あなた」とは、本ライセンスによって許諾された権利を行使する個人または法的主体を意味します。
+「ソース形式」とは、ソフトウェアのソースコード、ドキュメントのソース、設定ファイルなど、修正を加えるために適した形式を意味します。
+「オブジェクト形式」とは、ソース形式から機械的に変換または翻訳された形式を意味し、コンパイルされたオブジェクトコード、生成されたドキュメント、他のメディア形式への変換などを含みますが、これに限定されません。
+「本作品」とは、ソース形式またはオブジェクト形式のいずれであれ、本ライセンスの下で提供される著作物を意味し、著作権表示によって示されるものとします（例は本書末尾の付録に記載）。
+「派生作品」とは、本作品に基づく（または派生した）ソース形式またはオブジェクト形式の著作物であり、編集、注釈、補足、その他の改変により全体として独自の著作物となるものを指します。ただし、本作品またはその派生作品のインターフェースに単にリンクする、または名称で結びつくのみの作品は含まれません。
+「貢献」とは、本作品のオリジナル版やその派生作品への修正・追加を含む著作物であり、著作権者またはその代理権限を有する個人・団体によって、本作品に組み込む目的でライセンサーに提出されたものを指します。
+「コントリビューター」とは、ライセンサーおよび、その貢献がライセンサーにより受領され、後に本作品に組み込まれた個人または法的主体を意味します。
+
+2. 著作権ライセンスの付与
+本ライセンスの条件に従うことを前提に、各コントリビューターはあなたに対して、
+本作品およびその派生作品（ソース形式またはオブジェクト形式）を複製、派生作品の作成、
+公衆への表示、公衆への実演、サブライセンス、および配布する、
+永続的・全世界・非独占的・無償・ロイヤリティフリー・取消不能な著作権ライセンスを付与します。
+
+3. 特許ライセンスの付与
+本ライセンスの条件に従うことを前提に、各コントリビューターはあなたに対して、
+そのコントリビューション単体またはそのコントリビューションと本作品の組み合わせによって不可避的に侵害される、
+当該コントリビューターがライセンス可能な特許請求項に関して、
+本作品を製造、使用、販売、申し出による販売、輸入、その他譲渡する、
+永続的・全世界・非独占的・無償・ロイヤリティフリー・取消不能な特許ライセンスを付与します（ただしこの条項に定める例外を除く）。
+
+あなたが、いかなる主体に対しても（反訴や反訴請求を含む）
+「本作品またはその中に含まれるコントリビューションが特許権を侵害している」として訴訟を提起した場合、
+その本作品に対してあなたに付与されていた特許ライセンスは、
+その訴訟が提起された日をもって自動的に終了します。
+
+4. 再配布
+あなたは、本作品またはその派生作品を、修正の有無を問わず、
+ソース形式またはオブジェクト形式で、あらゆる媒体を通じて複製および配布することができますが、
+以下の条件を満たす必要があります：
+
+- 本作品または派生作品の受領者に、本ライセンスのコピーを提供すること。
+- 修正を行ったファイルには、その旨を目立つように表示すること。
+- 派生作品のソース形式において、本作品のソース形式に含まれていた著作権、特許、商標、帰属表示を保持すること。
+- 本作品に \"NOTICE\" ファイルが含まれていた場合、
+  派生作品にもその内容（派生部分に関係するもののみ）を、
+  以下のいずれかに読みやすい形で含めること：
+    - 派生作品に同梱する NOTICE ファイル
+    - 派生作品と一緒に提供するドキュメントまたはソース内
+    - 派生作品のユーザーインターフェース等、通常第三者表示が現れる箇所
+
+NOTICE ファイルの内容は情報提供のみを目的としたものであり、ライセンス条件自体を変更するものではありません。
+
+あなた自身の帰属表示を、元の NOTICE に追加・併記することは可能ですが、
+それによって本ライセンスの内容が変更されたと解釈されないようにする必要があります。
+
+また、あなたが加えた修正部分に対して、
+独自の著作権表示や別ライセンス条件を設定することもできますが、
+本作品の利用、複製、配布に関しては、引き続き本ライセンスに従う必要があります。
+
+5.貢献の提出
+あなたが本作品に対して意図的に貢献（Contribution）を提出する場合、
+特に別の条件を明示しない限り、その貢献は本ライセンスの条件の下で提供されたものとみなされます。
+
+ただし、あなたがライセンサーと別個にライセンス契約を結んでいる場合は、
+その契約の条件が本ライセンスに優先されるものとします。
+
+6.商標
+本ライセンスは、ライセンサーの商号、商標、サービスマーク、製品名を使用する権利を付与するものではありません。ただし、本作品の出所を記述したり、NOTICE ファイルの内容を再現するなど、
+合理的かつ一般的な使用に必要な場合はこの限りではありません。
+
+7.保証の否認
+適用される法律で要求される場合や、書面による合意がある場合を除き、
+ライセンサーは本作品を（各コントリビューターはその貢献を）
+"現状のまま（AS IS）" で提供し、いかなる種類の明示的または黙示的な保証、
+特に所有権、非侵害、商品性、特定の目的への適合性についても一切保証しません。
+
+本作品の使用や再配布が適切かどうかは、あなた自身が判断し、
+本ライセンスのもとで行う一切の行為に伴うリスクを、あなたが負うものとします。
+
+8.責任の制限
+いかなる状況においても（不法行為（過失を含む）、契約、その他の法的理論に基づくかを問わず）、
+適用法で要求される場合（故意または重過失による行為など）や、書面による合意がある場合を除き、
+いかなるコントリビューターも、本ライセンスまたは本作品の使用・使用不能に起因する損害、
+たとえば信頼失墜、業務停止、コンピューター障害、またはその他の商業的損失を含む
+直接的、間接的、特別的、偶発的、結果的な損害について、たとえそれらの可能性を知らされていたとしても、
+一切の責任を負いません。
+
+9.保証または追加責任の受け入れ
+あなたが本作品またはその派生作品を再配布する際に、
+サポート、保証、補償その他の義務や権利を有償で提供することは可能です。
+
+ただし、そうした義務を受け入れる場合、それはあなた自身の責任と裁量で行うものであり、
+他のコントリビューターを代表して行うことはできません。
+また、それにより生じた責任や請求については、あなたが補償・防御し、
+他のコントリビューターに損害を与えないようにする必要があります。
+
+END OF TERMS AND CONDITIONS
